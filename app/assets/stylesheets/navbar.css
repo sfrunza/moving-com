@@ -1,0 +1,63 @@
+#app nav.navbar{
+  font-family: 'Maison Neue Demi';
+}
+.nav-bar-link:hover{
+  text-decoration: none;
+}
+.nav-link:active, .nav-link:hover, .nav-link:focus{
+  color: purple !important;
+}
+.mr-auto.navbar-nav a {
+  color: black !important;
+  margin-left: 10px;
+}
+@media screen and (min-width: 300px){
+  .navbar-nav {
+    margin-left: 13%;
+  }
+  .navbar-brand {
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #basic-navbar-nav {
+    margin-left: 40px !important;
+  }
+
+}
+.navbar {
+  -webkit-box-shadow: rgba(0,0,0,.1) 0 2px 4px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    color: #0c0e0f;
+}
+.navbar-button.btn-primary{
+  border-radius: 100px;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #6261b8;
+}
+
+/*Request button*/
+.navbar-button.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #6261b8;
+    border-color: #6261b8;
+}
+.navbar-button.btn-primary {
+    color: #fff;
+    background-color: #6261b8;
+    border-color: #6261b8;
+    font-family: 'Maison Neue Bold',sans-serif; 
+}
+.navbar-button.btn-primary:hover {
+    color: #fff;
+    background-color: #6261b8;
+    border-color: #6261b8;
+}
+.navbar-button.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem hsl(241, 38%, 55%);
+}
+.navbar button:focus {
+    outline: none !important;
+}
