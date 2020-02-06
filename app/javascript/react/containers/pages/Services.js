@@ -11,6 +11,7 @@ const Services = props => {
         </div>
         <div className="insight-services-cover"></div>
       </div>
+      <span className="anchor" id="local"></span>
 
 
       <ServicesComponent title="Local Moving"

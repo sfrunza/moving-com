@@ -6,7 +6,6 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import logo from '../../../../assets/images/logo.jpg'
 
-
 class NavigationBar extends Component {
   render() {
 
