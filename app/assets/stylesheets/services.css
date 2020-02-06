@@ -86,12 +86,11 @@
 .service-header-title {
 
   font-family: 'Maison Neue Bold';
-  font-size: 2.33051rem;
-  line-height: 3.17797rem;
+  font-size: 32px;
 }
 .service-header-subtitle {
-  font-size: 1.27119rem;
-  line-height: 2.0339rem;
+  font-size: 18px;
+  line-height: 27px;
   font-family: 'Maison Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
 }

@@ -2,6 +2,7 @@
 @media (max-width: 35.5em){
   #app {
       font-size: 12px;
+      font-family: Arial, sans-serif !important;
   }
 }
 /*  intro and cover   */
@@ -48,28 +49,7 @@
   position: relative;
   text-align: center;
 }
-.arrow{
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  bottom: 0;
-  padding-bottom: 30px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 120px;
-  left: 50%;
-  margin-left: -24px;
-  -webkit-transition: bottom .5s ease-out;
-  transition: bottom .5s ease-out;
-  position: absolute;
-  width: 48px;
-  z-index: 10;
-}
-.arrow:hover{
-  bottom: -15px;
-}
+
 .intro-info-landing{
   margin: 80px auto;
   position: relative;
@@ -101,16 +81,15 @@
 }
 .insight-landing-rates-header h3{
   font-family: 'Maison Neue Bold';
-  font-size: 2.33051rem;
+  font-size: 32px;
   line-height: 3.17797rem;
 }
 .x-grid{
+  z-index: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-between
+  margin: auto;
 }
 
 .insight-landing-rates-hourly{
@@ -121,9 +100,25 @@
 .insight-landing-rates-hourly{
   flex: 0 1 auto;
   margin: 0px;
+}
+
+.insight-landing-rates-body{
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 2.5%;
 }
 .rate-body{
   font-family: 'Maison Neue',sans-serif;
+  text-align: center;
+}
+.rate-header{
+  text-align: center;
+  font-family: 'Maison Neue Bold';
+}
+.rate-container{
+  margin: 20px 20px;
+  transition: 0.4s;
+
 }
 
 @media (max-width: 35.5em){
@@ -153,8 +148,12 @@
 }
 .insight-landing-services-header h3{
   font-family: 'Maison Neue Bold';
-  font-size: 2.33051rem;
-  line-height: 3.17797rem;
+  font-size: 32px;
+}
+@media (max-width: 35.5em){
+  .insight-landing-services-header h3{
+    font-size: 25px;
+  }
 }
 
 /* services card   */
