@@ -1,27 +1,11 @@
-#insight-gallery-page{
-  text-align: center;
+#insight-pricing-page {
+  padding-bottom: 2.5%;
+  position: relative;
+  transition: padding-right .2s;
+  min-height: 100vh;
 }
-.ReactGridGallery {
-  width: 60%;
-  margin: 5% auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 1000px){
-  .ReactGridGallery {
-    width: 90%;
-    margin: auto;
-    margin-top: 5%;
-  }
-}
-
-.ReactGridGallery img{
-  max-width: none;
-}
-
-.insight-gallery-cover{
-  background-image: url("moving-gallery.jpg");
+.insight-pricing-cover{
+  background-image: url("pricing-background.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +16,7 @@
   transform: translateY(-50%);
   width: 100%;
 }
-.insight-gallery-cover:before {
+.insight-pricing-cover:before {
   background: linear-gradient(#000,transparent);
   content: "";
   position: absolute;
@@ -41,7 +25,8 @@
   height: 100%;
   width: 100%;
 }
-.insight-gallery-intro{
+
+.insight-pricing-intro{
   background: #000;
   color: #fff;
   display: -webkit-box;
@@ -56,17 +41,18 @@
   position: relative;
   text-align: center;
 }
+
 @media (max-width: 35.5em){
-  .insight-gallery-intro{
-    min-height: 500px;
+  .insight-pricing-intro{
+      min-height: 500px;
   }
-  .insight-gallery-cover{
+  .insight-pricing-cover{
     height: 600px;
   }
-  .ReactGridGallery {
-    margin: 15% auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%
+  .section-title{
+    font-size: 2rem;
+  }
+  .section-subtitle{
+    font-size: 1rem;
   }
 }

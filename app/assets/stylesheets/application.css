@@ -17,5 +17,7 @@
  *= require landing_page
  *= require services
  *= require fonts
+ *= require footer
+ *= require sections/services_landing
 
  */

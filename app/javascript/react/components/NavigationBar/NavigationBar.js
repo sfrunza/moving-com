@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -6,9 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import logo from '../../../../assets/images/logo.jpg'
 
-class NavigationBar extends Component {
-  render() {
-
+const NavigationBar = props => {
     return (
       <Navbar  bg="white" expand="lg" collapseOnSelect fixed="top">
         <Navbar.Brand href="/">
@@ -35,11 +33,9 @@ class NavigationBar extends Component {
             <Button variant="primary" className="navbar-button">Request </Button>
             </Nav.Link>
           </Nav>
-
         </Navbar.Collapse>
       </Navbar>
     );
-  }
 }
 
 export default NavigationBar;
