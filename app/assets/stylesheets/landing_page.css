@@ -77,6 +77,7 @@
   padding-top: 66px;
   position: relative;
   top: -68px;
+  margin-bottom: -50px;
 }
 
 
@@ -574,6 +575,39 @@ select:focus {
     padding: 0 1.25%;
     width: 33.3%;
 }
+#insight-landing-page div div div div.insight-landing-reviews-logos {
+  -webkit-box-align: space-between;
+  -ms-flex-align: space-between;
+  align-items: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 2.5%;
+  width: 80%;
+  margin: auto;
+}
+.insight-landing-reviews-logo{
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    padding: 0 1.5%;
+    width: 200px;
+    margin: auto;
+}
+.insight-landing-reviews-logo img{
+  opacity: 0.5;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 @media (max-width: 35.5em){
   .reviews-header-title-blue, .reviews-footer-title-blue{
     font-size: 14px;
