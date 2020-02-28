@@ -5,13 +5,14 @@
   min-height: 100vh;
 }
 
+
 .local-moving {
   margin: 0 auto;
   max-width: 1240px;
   padding: 0 2.5%;
 }
 
-.insiht-services-header {
+.insight-services-header {
   text-align: center;
 }
 
@@ -105,13 +106,31 @@
   }
   .service-header-subtitle {
     font-size: 14px;
-    line-height: 2rem;
   }
   .intro-info{
     margin: 180px auto;
     max-width: 390px;
     position: relative;
     z-index: 3;
+  }
+  .insight-services-intro{
+      min-height: 500px;
+
+  }
+  .insight-services-cover{
+    height: 600px;
+  }
+  .section-title{
+    font-size: 2rem;
+  }
+  .section-subtitle{
+    font-size: 1rem;
+  }
+  #local{
+    margin-top: 4.25%;
+  }
+  .service-container {
+    margin-top: 3.25%;
   }
 }
 /* @media (max-width: 35.5em){

@@ -1,5 +1,6 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
+import Header from '../../components/Header/Header'
 
 const IMAGES =
 [
@@ -98,15 +99,9 @@ const IMAGES =
 const GalleryPage = props => {
   return (
     <div id="insight-gallery-page">
-      <div className="insight-gallery-intro">
-        <div className="intro-info">
-          <h3 className="section-title">Our Work</h3>
-          <h6 className="section-subtitle">Every move includes professional furniture protection at no extra charge.</h6>
-        </div>
-        <div className="insight-gallery-cover"></div>
-      </div>
-        <Gallery images={IMAGES} enableImageSelection={false} />
-
+      <Header classNameIntro="insight-gallery-intro" classNameCover="insight-gallery-cover" headerTitle="Our Work" headerSubtitle="Every move includes professional furniture protection at no extra charge." />
+      <i className="fas fa-th" style={{fontSize: "35px", color: "#7e46ea", marginTop: "60.25px"}}></i>
+      <Gallery images={IMAGES} enableImageSelection={false} />
     </div>
   )
 }
