@@ -28,7 +28,7 @@ const PricesLanding = props => {
                   <span className="pricing-term">/ hour</span>
                 </span>
               </div>
-              <a href="/prices" className="right" style={{lineHeight: "2em"}}>View all Pricing Plans »</a>
+              <a href="/pricing#local-rates" className="right" style={{lineHeight: "2em"}}>View all Pricing Plans »</a>
             </div>
 
             <div className="rate-container">
@@ -46,7 +46,7 @@ const PricesLanding = props => {
                   <span className="pricing-amount">950</span>
                 </span>
               </div>
-              <a href="/prices" className="right" style={{lineHeight: "2em"}}>View Flat Rates »</a>
+              <a href="/pricing#long-distance-rates" className="right" style={{lineHeight: "2em"}}>View Flat Rates »</a>
             </div>
 
           </div>

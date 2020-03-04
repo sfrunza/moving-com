@@ -5,7 +5,7 @@
   min-height: 100vh;
 }
 .insight-pricing-cover{
-  background-image: url("pricing-background.jpg");
+  background-image: url("https://static.cms.yp.ca/ecms/media/1/bigstock-Man-Signing-A-Contract-When-Bu-56872922-1427730291-600x360.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,6 @@
   height: 100%;
   width: 100%;
 }
-
 .insight-pricing-intro{
   background: #000;
   color: #fff;
@@ -42,6 +41,22 @@
   text-align: center;
 }
 
+
+/* ----------------------------------  local rates-------------------- */
+.hourly-rate, .interstate-rates {
+  flex-direction: column;
+  text-align: center;
+}
+.two-h-min {
+  font-weight: 900;
+}
+
+.discount, .standard, .peak {
+  margin-top: 20px;
+}
+
+
+
 @media (max-width: 35.5em){
   .insight-pricing-intro{
       min-height: 500px;
@@ -55,4 +70,207 @@
   .section-subtitle{
     font-size: 1rem;
   }
+}
+
+
+
+/* ----------------------------------  long distance rates-------------------- */
+
+.cards {
+  display: flex;
+  width: 960px;
+  margin: auto;
+  padding-top: 5%;
+  height: 500px;
+
+}
+
+.flat-prices{
+  padding: 0px 5%;
+  width: 75%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-description{
+  width: 75%;
+  margin: auto;
+  font-family: 'Maison Neue Bold';
+}
+.card-description p{
+  font-size: 18px;
+}
+
+.card-rates{
+  text-align: initial;
+}
+
+.card-buttons{
+  margin-top: 10%;
+}
+
+.card-buttons button{
+  background-color: #7e46ea;
+  border-radius: 100px;
+}
+
+.card-buttons button:hover{
+  background-color: : #7e46ea;
+}
+.big-image{
+  box-shadow: 0 62px 102px rgba(0,0,0,.15);
+}
+
+.card-rates{
+  height:250px;
+  width:100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: 'Maison Neue',sans-serif;
+}
+
+.card-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.card-rates::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+.flat-amount{
+  float: right;
+  margin-right: 5%;
+}
+
+
+@media (max-width: 35.5em){
+  .cards{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .card-description{
+    width: 100%;
+  }
+  .flat-prices{
+    width: 100%;
+  }
+  .card-wrapper img {
+    display: none
+  }
+  .card-rates{
+    margin: 20px auto;
+  }
+  .card-description p{
+    font-size: 16px;
+  }
+
+}
+
+
+/* ----------------------------------  storage rates-------------------- */
+
+.storage-rate-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+
+.storage-service{
+  width: 48%;
+  padding: 5% 5%;
+}
+
+.storage-service p{
+  font-size: 16px;
+    font-family: 'Maison Neue',sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.storage-service p span{
+  font-family: 'Maison Neue Bold';
+  -webkit-font-smoothing: antialiased;
+}
+.storage-service h3{
+  color: #7e46ea;
+  margin-top: 25px;
+  font-size: 25px;
+}
+.storage-service img{
+  width: 300px;
+  margin: -20px auto;
+}
+.overnight-fee{
+  color: #7e46ea;;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: 'Maison Neue Bold' !important;
+  -webkit-font-smoothing: antialiased;
+}
+.storage-rates{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+.size-move{
+  margin-bottom: 0px;
+  color: #7e46ea;
+  font-size: 18px;
+  font-family: 'Maison Neue',sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.rate-mo{
+  color: #7e46ea;;
+  font-size: 18px;
+  font-family: 'Maison Neue Bold' !important;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 35.5em){
+  .storage-rate-container{
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+  .storage-service{
+    width: 95%;
+    margin:auto;
+  }
+  .storage-service img{
+    width: 300px;
+    margin:auto;
+  }
+  .storage-service p{
+    font-size: 14px;
+  }
+  .storage-service h4{
+    font-size: 20px;
+  }
+  .storage-service h3{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+
+
 }

@@ -37,8 +37,27 @@
     <%- end -%>
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
+  <script>
+    function offsetAnchor() {
+    if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 60);
+    }
+    }
+
+    $(document).on('click', 'a[href^="#"]', function(event) {
+
+    window.setTimeout(function() {
+    offsetAnchor();
+    }, 0);
+    });
+
+    window.setTimeout(offsetAnchor, 0);
+</script>
+
 
   <%= content_for :extra_footer do %>
   <% end %>
+
+
 </body>
 </html>

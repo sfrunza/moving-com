@@ -11,6 +11,14 @@
   color: black !important;
   margin-left: 10px;
 }
+.navbar-brand a{
+  color: #000;
+}
+.navbar-brand a:hover{
+  color: #000;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 300px){
   .navbar-nav {
     margin-left: 13%;
@@ -71,4 +79,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,.5);
     border-color: transparent !important;
+}
+.navbar-collapse{
+  overflow: hidden;
 }

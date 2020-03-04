@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   get '/' => 'homes#index'
-  get '/prices' => 'homes#index'
+  get '/pricing' => 'homes#index'
   get '/gallery' => 'homes#index'
   get '/services' => 'homes#index'
   get '/client-login' => 'homes#index'
