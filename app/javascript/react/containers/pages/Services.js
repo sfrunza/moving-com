@@ -8,7 +8,7 @@ import StorageSection from '../sections/ServicesSections/StorageSection'
 const Services = props => {
   return (
     <div id="insight-services-page">
-      <Header classNameIntro="insight-services-intro" classNameCover="insight-services-cover" headerTitle="Our Services" headerSubtitle="sjkndfkjsnkjdfsdnfjksdjfnk" />
+      <Header classNameIntro="insight-services-intro" classNameCover="insight-services-cover" headerTitle="Moving Services" headerSubtitle="sjkndfkjsnkjdfsdnfjksdjfnk" />
       <LocalMovingSection />
       <InterstateMovingSection />
       <PackingSection />

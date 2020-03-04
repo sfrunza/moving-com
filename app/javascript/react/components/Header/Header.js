@@ -10,7 +10,6 @@ const Header = props => {
         <h6 className="section-subtitle">{props.headerSubtitle}</h6>
       </div>
       <div className={classNameCover}></div>
-      <span className="anchor" id="local"></span>
     </div>
 
   )
