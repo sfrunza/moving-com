@@ -26,7 +26,7 @@ const NavigationBar = props => {
               height="50"
               className="d-inline-block align-top"
             />{' '}
-            InsightMovingCo
+            <h4 className="logo-name">InsightMovingCo</h4>
             </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}/>
@@ -59,7 +59,7 @@ const NavigationBar = props => {
               height="50"
               className="d-inline-block align-top"
             />{' '}
-            InsightMovingCo
+            <h4 className="logo-name">InsightMovingCo</h4>
             </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}/>

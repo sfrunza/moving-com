@@ -45,10 +45,10 @@ const ServicesLanding = props => {
                       <a href="/services#interstate" className="service-title-link w-inline-block">
                         <h4 className="h4-heading">Interstate Moving</h4>
                       </a>
-                      <p className="paragraph small">Flat Rate Moving. Gas, mileage, tolls, insurance are included. No hidden fees. Same or Next Day moving services on distance up to 1,500 miles.</p>
+                      <p className="paragraph small">Flat Rate Moving. Same or Next Day moving services on distance up to 1,500 miles.</p>
                       <div className="benefit">
                         <img src="https://uploads-ssl.webflow.com/5d5a497d83100b4a7107c6a2/5d5c4ab8f8e0fceb33ca47bb_icon-greencheckmark.svg" alt="icon-greencheckmark" className="benefit-icon" />
-                        <div className="benefit-text">Flat Rate Moving. No hidden fees</div>
+                        <div className="benefit-text">Flat Rate Moving</div>
                       </div>
                       <div className="button-spacer">
                         <a href="/services#interstate" className="button black w-button">Read More</a>
@@ -68,7 +68,7 @@ const ServicesLanding = props => {
                       <a href="/services#packing" className="service-title-link w-inline-block">
                         <h4 className="h4-heading">Packing Services</h4>
                       </a>
-                      <p className="paragraph small">Our experienced movers will have all necessary packing materials to pack up everything - with the utmost care - from the attic to the basement.</p>
+                      <p className="paragraph small">Our experienced movers will have all necessary packing materials to pack up everything. </p>
                       <div className="benefit">
                         <img src="https://uploads-ssl.webflow.com/5d5a497d83100b4a7107c6a2/5d5c4ab8f8e0fceb33ca47bb_icon-greencheckmark.svg" alt="icon-greencheckmark" className="benefit-icon" />
                         <div className="benefit-text">Full Home Packing Services</div>
@@ -91,7 +91,7 @@ const ServicesLanding = props => {
                       <a href="/services#storage" className="service-title-link w-inline-block">
                         <h4 className="h4-heading">Storage Solutions</h4>
                       </a>
-                      <p className="paragraph small">Insight Moving provides clean, dry, climate and temperature controlled storage for up to 6 months.</p>
+                      <p className="paragraph small">Insight Moving provides climate controlled storage for up to 6 months.</p>
                       <div className="benefit">
                         <img src="https://uploads-ssl.webflow.com/5d5a497d83100b4a7107c6a2/5d5c4ab8f8e0fceb33ca47bb_icon-greencheckmark.svg" alt="icon-greencheckmark" className="benefit-icon" />
                         <div className="benefit-text">First 10 Days FREE Storage</div>

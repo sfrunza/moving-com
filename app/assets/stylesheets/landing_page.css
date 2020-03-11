@@ -91,7 +91,7 @@
   margin-left: 15px;
   padding: 40px 30px 25px;
   border-radius: 6px;
-  background-color: #1f0e3f;
+  background-color: #1f0e3fe6;
 }
 .calc-header{
   width: 100%;
@@ -116,6 +116,17 @@
   color: white;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color #fff ease-out, background-color #fff ease-out";
+    -webkit-transition-delay: 9999s;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+}
+
 
 input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea
  {
@@ -126,20 +137,20 @@ input:not([type]), input[type="text"], input[type="password"], input[type="date"
     padding-left: 20px;
     border: 1px none #000;
     border-radius: 4px;
-    background-color: #2c1656;
+    background-color: #532c9e;
     color: #fff !important;
-    font-size: 13px;
     font-weight: 500;
 }
 input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea::placeholder
 {
     color: #fff !important;
+    font-size: 16px !important;
 
 }
 input:not([type]):focus, input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus
 {
-    background: #2c1656;
-    border-color: #2c1656;
+    background: #532c9e;
+    border-color: #532c9e;
     outline: none;
 }
 .form-element{
@@ -152,12 +163,12 @@ input:not([type]):focus, input[type="text"]:focus, input[type="password"]:focus,
 
 .w-input::placeholder{
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
 }
 input, optgroup, select, textarea {
     margin: 0;
     font-family: inherit;
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: inherit;
 }
 
@@ -169,14 +180,14 @@ select {
     padding-left: 20px;
     border: 1px none #000;
     border-radius: 4px;
-    background-color: #2c1656;
+    background-color: #532c9e;
     color: #fff !important;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 select:focus {
-    background-color: #2c1656;
-    border-color: #2c1656;
+    background-color: #532c9e;
+    border-color: #532c9e;
     outline: none;
 
 }
@@ -227,16 +238,6 @@ select:focus {
 
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -383,6 +384,7 @@ select:focus {
   }
   .insight-landing-rates-hourly {
     margin-bottom: 10%;
+    width: 90%;
   }
   .insight-landing-rates-flat {
     margin-top: 10%;

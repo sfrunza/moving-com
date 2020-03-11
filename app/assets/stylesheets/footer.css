@@ -25,6 +25,9 @@
   text-align: center;
   margin-top: 4%;
 }
+.insight-footer-tagline p{
+  margin-bottom: 0px
+}
 
 .insight-footer-tagline-copyright{
   margin-left: 26px;
@@ -109,11 +112,13 @@
 }
 .insight-footer-insight{
   width: 60%;
-  margin-bottom: 10%;
+  margin: auto;
 }
 @media (max-width: 35.5em){
 
   .insight-footer-insight {
-      margin: 0 auto 15%;
+      margin: 0 auto 5%;
+      max-width: 40%;
+      height: auto;
   }
 }

@@ -19,6 +19,9 @@
  *= require fonts
  *= require footer
  *= require sections/services_landing
+ *= require sections/local_services
+ *= require sections/interstate_services
+ *= require sections/packing_services
  *= reqiure pricingtable
 
  */
