@@ -99,7 +99,7 @@ const IMAGES =
 const GalleryPage = props => {
   return (
     <div id="insight-gallery-page">
-      <Header classNameIntro="insight-gallery-intro" classNameCover="insight-gallery-cover" headerTitle="Our Work" headerSubtitle="Every move includes professional furniture protection at no extra charge." />
+      <Header classNameIntro="insight-gallery-intro" classNameCover="insight-gallery-cover" headerTitle="Our Work" headerSubtitle="Every move includes professional furniture protection at no extra charge" />
       <i className="fas fa-th" style={{fontSize: "35px", color: "#7e46ea", marginTop: "60.25px"}}></i>
       <Gallery images={IMAGES} enableImageSelection={false} />
     </div>
