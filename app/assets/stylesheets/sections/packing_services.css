@@ -54,9 +54,7 @@
   .packing-section{
     width: 100%;
     flex-direction: column;
-
   }
-
   .packing-section-body{
     flex-direction: column;
     width: 100%;
@@ -81,7 +79,6 @@
   .packing-section-img img{
     display: none;
   }
-
 
 
 }
