@@ -14,7 +14,7 @@ const LocalMovingSection = props => {
 
 
       <img className="mobile-img" src={image} />
-      <ReactWOW animation='fadeInUp' duration="1.5s" delay="0.5s">
+      <ReactWOW animation='fadeInUp' duration="1.5s">
       <div className="local-services-container">
         <div className="local-services-item">
           <img src="https://static1.squarespace.com/static/586174e1ff7c506c994738d2/5861f218d2b857ddbd7d08f9/5871b4ea1e5b6c9fdaa8424e/1484338685487/?format=1500w" />

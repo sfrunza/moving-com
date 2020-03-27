@@ -13,7 +13,7 @@ const StorageSection = props => {
         <p className='service-header-subtitle'>Move with us and get First 10 Days FREE Storage. Valid September through May.</p>
       </div>
 
-      <ReactWOW animation='fadeInUp' duration="1.5s" delay="0.5s">
+      <ReactWOW animation='fadeInUp' duration="1.5s">
       <div className="storage-rate-container">
         <div className="storage-service">
           <div className="long-term">

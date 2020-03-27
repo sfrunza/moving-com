@@ -17,6 +17,7 @@ const NavigationBar = props => {
 
     return (
       <Navbar  bg="white" expand="lg" collapseOnSelect fixed="top">
+      <div className="nav-width" >
         <Navbar.Brand >
         <Link to='/' className="navbar-brand">
             <img
@@ -36,20 +37,22 @@ const NavigationBar = props => {
             <Link className='nav-link' to="/pricing" onClick={toggleNavbar}>Pricing</Link>
             <Link className='nav-link' to="/services" onClick={toggleNavbar}>Services</Link>
             <Link className='nav-link' to="/gallery" onClick={toggleNavbar}>Gallery</Link>
-            <Link className='nav-link' to="/client-login" onClick={toggleNavbar}>Client Login</Link>
+            <Link className='nav-link' to="/client-login" onClick={toggleNavbar}><i className="fas fa-user" style={{marginRight: "5px"}}></i>Client Login</Link>
           </Nav>
 
-          <Nav>
+          <Nav className="nav-button">
             <Nav.Link eventKey={2} href="/#">
             <Button variant="primary" className="navbar-button">Book Us Now </Button>
             </Nav.Link>
           </Nav>
         </Collapse>
+      </div>
       </Navbar>
     );
   } else {
     return (
       <Navbar  bg="white" expand="lg" collapseOnSelect fixed="top">
+      <div className="nav-width">
         <Navbar.Brand >
         <Link to='/'>
             <img
@@ -69,16 +72,17 @@ const NavigationBar = props => {
             <Link className='nav-link' to="/pricing">Pricing</Link>
             <Link className='nav-link' to="/services">Services</Link>
             <Link className='nav-link' to="/gallery">Gallery</Link>
-            <Link className='nav-link' to="/client-login">Client Login</Link>
+            <Link className='nav-link' to="/client-login"><i className="fas fa-user" style={{marginRight: "5px"}}></i>Client Login</Link>
           </Nav>
 
-          <Nav>
-            <Nav.Link eventKey={2} href="/#">
-            <Button variant="primary" className="navbar-button">Book Us Now </Button>
+          <Nav className="nav-button">
+            <Nav.Link eventKey={4} href="/#">
+              <Button variant="primary" className="navbar-button">Book Us Now </Button>
             </Nav.Link>
           </Nav>
         </Collapse>
-      </Navbar>
+      </div>
+    </Navbar>
     );
 
   }

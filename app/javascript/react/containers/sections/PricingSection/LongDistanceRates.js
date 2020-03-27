@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactWOW from 'react-wow'
 
 
 const LongDistanceRates = props => {
@@ -9,7 +10,7 @@ const LongDistanceRates = props => {
         <h3 className='service-header-title'>Flat Rates</h3>
         <p className='service-header-subtitle'>Is based upon the mileage from the origin to the destination, and the cubic footage of your belongings.</p>
       </div>
-
+      <ReactWOW animation='fadeInUp' duration="1.5s">
       <div className="long-distance-body">
         <div className="cards">
           <div className="card-wrapper big-image">
@@ -67,6 +68,7 @@ const LongDistanceRates = props => {
           </div>
         </div>
       </div>
+      </ReactWOW>
 
     </div>
 

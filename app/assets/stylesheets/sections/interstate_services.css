@@ -11,10 +11,13 @@
   width: 50%;
   margin: auto;
 }
+.flat-rate-link-to span{
+  color: #7e46ea;
+  margin: 0px 6px;
+}
 
 .flat-rate-link:hover{
   color: #7e46ea;
-  text-decoration: none;
 }
 .card-description-service-section{
   margin: 0px auto;

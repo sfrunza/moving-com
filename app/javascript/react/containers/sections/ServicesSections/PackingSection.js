@@ -11,7 +11,7 @@ const PackingSection = props => {
         <p className='service-header-subtitle'>Let us make your move even easier with our full home packing services.</p>
       </div>
 
-      <ReactWOW animation='fadeInUp' duration="1.5s" delay="0.5s">
+      <ReactWOW animation='fadeInUp' duration="1.5s">
       <div className="packing-section">
 
       <img className="img-mobile-v" src="https://canddmovingservice.com/files/2014/04/boxes-2.jpg" />

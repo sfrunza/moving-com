@@ -34,7 +34,7 @@ const Footer = props => {
             <ul role="navigation">
               <li><a href="/gallery" title="gallery" data-prefetch="" className=""><span>gallery</span></a>
               </li>
-              <li><a href="/prices" title="pricing" data-prefetch="" className=""><span>pricing</span></a>
+              <li><a href="/pricing" title="pricing" data-prefetch="" className=""><span>pricing</span></a>
               </li>
               <li><a href="#" title="Terms of Service" target="_blank" data-prefetch="" className=""><span>TERMS OF SERVICE</span></a></li>
               <li><a href="#" title="Discord" target="_blank" rel="noopener noreferrer"><span>PRIVACY POLICY</span></a></li>

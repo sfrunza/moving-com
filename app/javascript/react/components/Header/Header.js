@@ -7,7 +7,7 @@ const Header = props => {
   return (
     <div className={classNameIntro}>
       <div className="intro-info">
-        <ReactWOW animation='fadeIn' duration="2.5s">
+        <ReactWOW animation='fadeInRight' duration="0.5s">
         <h3 className="section-title">{props.headerTitle}</h3>
         <h6 className="section-subtitle">{props.headerSubtitle}</h6>
         </ReactWOW>

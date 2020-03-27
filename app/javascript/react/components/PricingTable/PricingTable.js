@@ -1,10 +1,12 @@
 import React from 'react';
+import ReactWOW from 'react-wow'
 
 
 const PricingTable = props => {
 
   return(
       <div className="pricing-container">
+      <ReactWOW animation='fadeInUp' duration="1.5s">
         <div className="pricing_table ">
             <ul className="pricing_column_first col-sm" >
                 <li className="pricing_header1 discount"></li>
@@ -45,6 +47,7 @@ const PricingTable = props => {
             </div>
         </div>
         <p className="section-subtitle table-subtitle"><span className="discount-span">Discounted Rate:</span> Monday - Thursday<br></br><span className="standard-span">Standard Rate:</span> Weekends, first & last week of the month<br></br><span className="peak-span">Peak Rate:</span> National holidays & peak moving days</p>
+      </ReactWOW>
     </div>
 
 

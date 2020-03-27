@@ -1,16 +1,23 @@
 import React from 'react';
 import clock from '../../../../../assets/images/clock-copy.png'
 import calendar from '../../../../../assets/images/calendar.png'
+import ReactWOW from 'react-wow'
 
 
 const StorageRates = props => {
   return (
 
-    <div id="storage-rates" className='service-container'>
-      <div className='service-header'>
-        <h3 className='service-header-title'>Storage Pricing</h3>
-        <p className='service-header-subtitle'>Storage pricing varies based on size of inventory, duration of storage, and season.</p>
+    <div id="storage-rates" className='service-container-storage'>
+      <div className='service-header-storage'>
+        <div className="storage-text">
+          <h3 className='service-header-title-storage'>Storage Pricing</h3>
+          <p className='service-header-subtitle-storage'>Storage pricing varies based on size of inventory, duration of storage, and season.</p>
+        </div>
+        <div className="storage-img">
+          <img src="https://www.highlandsselfstorage.com/uploads/cgblog/id107/760605_original_miami_self_storage.JPG"/>
+        </div>
       </div>
+      <ReactWOW animation='fadeInUp' duration="1.5s">
       <div className="storage-rate-container">
         <div className="storage-service">
           <div className="long-term">
@@ -45,6 +52,7 @@ const StorageRates = props => {
           </div>
         </div>
       </div>
+      </ReactWOW>
     </div>
 
   )

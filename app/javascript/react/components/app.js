@@ -7,12 +7,14 @@ import Pricing from '../containers/pages/Pricing'
 import GalleryPage from '../containers/pages/GalleryPage'
 import Services from '../containers/pages/Services'
 import MainLayout from '../components/MainLayout/MainLayout'
+import ScrollToTop from './ScrollToTop/ScrollToTop'
 
 const App = props => {
   return(
     <BrowserRouter>
       <div>
           <MainLayout>
+            <ScrollToTop />
             <Route exact path='/' render ={() => (<LandingPage/>)} />
             <Route exact path='/pricing' render ={() => (<Pricing/>)} />
             <Route exact path='/gallery' render ={() => (<GalleryPage/>)} />

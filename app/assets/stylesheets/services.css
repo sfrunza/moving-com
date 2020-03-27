@@ -1,10 +1,11 @@
 #insight-services-page {
-  padding-bottom: 1.25%;
+  /* padding-bottom: 1.25%;
   position: relative;
   transition: padding-right .2s;
-  min-height: 100vh;
+  min-height: 400px;
+  margin: auto;
+  background-color: #f2f2f2; */
 }
-
 
 .local-moving {
   margin: 0 auto;
@@ -39,7 +40,7 @@
 }
 
 .insight-services-intro{
-  background: #000;
+  /* background: #000; */
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,13 +53,16 @@
   padding: 8% 0;
   position: relative;
   text-align: center;
+  width: auto;
+  max-width: 1300px;
+  margin: auto;
 }
 .intro-info{
-  margin: 80px auto;
-  max-width: 700px;
+  margin: 10% auto;
   position: relative;
   z-index: 3;
   text-shadow: 2px 2px 5px #000;
+  width: 60%;
 }
 .section-title{
   font-size: 2.33051rem;
@@ -74,13 +78,15 @@
   color: white;
 }
 .service-container {
-  background: #f8f9fa;
-  margin-top: 1.25%;
+  background: #fafafa;
   padding: 10% 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+  width: auto;
+  max-width: 1300px;
+  margin: 1.5% auto;
 }
 .service-header{
   text-align: center;
@@ -98,8 +104,15 @@
   font-family: 'Maison Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+#storage, #packing{
+  background: #fafafa;
+
+}
 
 @media (max-width: 35.5em){
+  .service-container {
+    width: 100%;
+  }
   .service-header{
     width: 90%;
   }
@@ -111,14 +124,13 @@
     font-size: 14px;
   }
   .intro-info{
-    margin: 180px auto;
+    margin-top: 35%;
     max-width: 390px;
-    position: relative;
-    z-index: 3;
+    width: 100%;
   }
   .insight-services-intro{
-      min-height: 500px;
-
+    min-height: 500px;
+    width: 100%;
   }
   .insight-services-cover{
     height: 600px;
@@ -130,13 +142,19 @@
     font-size: 1rem;
   }
   #local{
-    margin-top: 15%;
+    margin-top: 17%;
   }
   .service-container {
-    margin-top: 3.25%;
+    margin-top: 15px;
   }
   #local-rates {
-    margin-top: 8%;
+    margin-top: 17%;
+  }
+  #storage{
+    margin-bottom: 15px;
+  }
+  #storage-rates{
+    margin-bottom: 15px;
   }
 
 }
