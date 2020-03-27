@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactWOW from 'react-wow'
 
 const ServicesLanding = props => {
   return (
@@ -13,6 +14,7 @@ const ServicesLanding = props => {
 
 
             <div className='four-services-div'>
+            <ReactWOW animation='fadeInUp' duration="1.5s">
 
               <div className='service-wrapper one'>
                 <div className="service-list w-dyn-items">
@@ -103,7 +105,7 @@ const ServicesLanding = props => {
                   </div>
                 </div>
               </div>
-
+            </ReactWOW>
           </div>
         </div>
       </div>

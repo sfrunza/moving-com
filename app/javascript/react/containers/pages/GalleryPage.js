@@ -1,6 +1,7 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
 import Header from '../../components/Header/Header'
+import ReactWOW from 'react-wow'
 
 const IMAGES =
 [
@@ -99,9 +100,16 @@ const IMAGES =
 const GalleryPage = props => {
   return (
     <div id="insight-gallery-page">
-      <Header classNameIntro="insight-gallery-intro" classNameCover="insight-gallery-cover" headerTitle="Our Work" headerSubtitle="Every move includes professional furniture protection at no extra charge" />
-      <i className="fas fa-th" style={{fontSize: "35px", color: "#7e46ea", marginTop: "60.25px"}}></i>
-      <Gallery images={IMAGES} enableImageSelection={false} />
+      <div className="gallery-container">
+        <div className="gallery-header">
+          <Header classNameIntro="insight-gallery-intro" classNameCover="insight-gallery-cover" headerTitle="Our Work" headerSubtitle="Every move includes professional furniture protection at no extra charge" />
+        </div>
+        <ReactWOW animation='fadeInUp' duration="1.5s">
+        <div className="gallery-img">
+          <Gallery images={IMAGES} enableImageSelection={false} />
+        </div>
+        </ReactWOW>
+      </div>
     </div>
   )
 }

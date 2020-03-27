@@ -20,7 +20,6 @@
   width: 100%;
 }
 .insight-landing-intro{
-  background: #000;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,6 +32,9 @@
   padding: 8% 0;
   position: relative;
   text-align: center;
+  width: auto;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .intro-info-landing{
@@ -45,11 +47,11 @@
 @media (max-width: 35.5em){
 
   .insight-landing-cover{
-    height: 550px;
+    height: 600px;
   }
   .insight-landing-intro{
     min-height: 500px;
-    padding: 0px 0px;
+    width: 100%;
   }
   .intro-info-landing{
     margin: 180px auto;
@@ -57,6 +59,10 @@
     position: relative;
     z-index: 3;
   }
+  .insight-landing-intro{
+    width: 100%;
+  }
+
 
 }
 
@@ -68,6 +74,15 @@
   top: -68px;
   margin-bottom: -50px;
 }
+@media (max-width: 35.5em){
+  #insight-landing-page {
+    margin-bottom: 15px;
+    overflow: auto;
+    padding-top: 0px;
+    top: 0px;
+
+  }
+}
 
 
 /*  Calculator */
@@ -76,22 +91,45 @@
 
 .full-quote {
   position: relative;
-  margin-top: -90px;
+  margin-top: -147px;
   padding-right: 25px;
   padding-left: 25px;
 }
 .calc-container {
-  position: relative;
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 55%;
+  padding: 0 20px;
+  overflow: hidden;
+  margin: auto;
 }
+
+@media only screen and (max-width: 1400px) {
+  .calc-container {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .calc-container {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .calc-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .calc-container {
+    width: 100%;
+  }
+}
+
+
 .quote-background {
   margin-right: 15px;
   margin-left: 15px;
   padding: 40px 30px 25px;
   border-radius: 6px;
-  background-color: #1f0e3fe6;
+  background-color: #000000a8;
 }
 .calc-header{
   width: 100%;
@@ -137,7 +175,7 @@ input:not([type]), input[type="text"], input[type="password"], input[type="date"
     padding-left: 20px;
     border: 1px none #000;
     border-radius: 4px;
-    background-color: #532c9e;
+    background-color: #9d6bffe0;
     color: #fff !important;
     font-weight: 500;
 }
@@ -149,8 +187,8 @@ input:not([type]), input[type="text"], input[type="password"], input[type="date"
 }
 input:not([type]):focus, input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus
 {
-    background: #532c9e;
-    border-color: #532c9e;
+    background: #9d6bffe0;
+    border-color: #9d6bffe0;
     outline: none;
 }
 .form-element{
@@ -180,14 +218,14 @@ select {
     padding-left: 20px;
     border: 1px none #000;
     border-radius: 4px;
-    background-color: #532c9e;
+    background-color: #9d6bffe0;
     color: #fff !important;
     font-size: 14px;
     font-weight: 500;
 }
 select:focus {
-    background-color: #532c9e;
-    border-color: #532c9e;
+    background-color: #9d6bffe0;
+    border-color: #9d6bffe0;
     outline: none;
 
 }
@@ -197,15 +235,16 @@ select:focus {
   margin: auto;
 }
 .calculate-button{
-  color: #fff ;
+  color: #7e46ea ;
   margin: auto ;
-  background-color: #7e46ea ;
+  background-color: #fff ;
   width: 100%;
   text-align: center;
   margin-top: 1.5em;
   border-radius: 4px;
   padding: 15px 40px;
   font-family: 'Maison Neue Bold';
+  border: 1px solid #7e46ea;
 }
 .calculate-button:hover{
   background-color: #7e46ea ;
@@ -245,27 +284,28 @@ select:focus {
 
 /* rates section */
 
-.vl {
-  border-left: 1px solid lightgrey;
-  height: 300px;
-}
 
 .insight-landing-reviews, .insight-landing-services {
-  background: #f8f9fa;
+  background: #fafafa;
   margin-top: 1.25%;
-  padding: 10% 0;
+  width: auto;
+  max-width: 1300px;
+  margin: 1.25% auto;
 }
+.insight-landing-rates{
+  margin-top: 1.25%;
+  width: 100%;
+  margin: 1.25% auto;
 
-.insight-landing-rates {
-  background: #f8f9fa;
-  margin-top: -100px;
-  padding: 150px 0;
 }
 
 .insight-landing-rates-header, .insight-landing-services-header, .insight-landing-reviews-header{
   margin: 0 auto;
-  padding-bottom: 5%;
+  padding: 7%;
   text-align: center;
+  background-color: #fafafa;
+  margin-bottom: 1.5%;
+  width: 80%;
 }
 .insight-landing-rates-header h3, .insight-landing-reviews-header h3{
   font-family: 'Maison Neue Bold';
@@ -274,21 +314,24 @@ select:focus {
 .x-grid{
   z-index: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
 }
 
-.insight-landing-rates-hourly{
+.insight-landing-rates-hourly, .insight-landing-rates-flat{
   flex: 0 1 auto;
   margin: 0px;
+  background-color: #fafafa !important;
+  width: 49%;
+  padding: 8% 5%;
 }
 
-
 .insight-landing-rates-body{
-  margin: 0 auto;
-  max-width: 1240px;
-  padding: 0 2.5%;
+  width: auto;
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
 }
 .rate-body{
   font-family: 'Maison Neue',sans-serif;
@@ -304,33 +347,32 @@ select:focus {
 .hourly-rates, .flat-rates{
   z-index: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: auto;
   font-family: 'Maison Neue Bold';
 }
 .flat-rates{
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .pricing-rate{
-  margin: auto;
+
 }
 
 .hourly-rates label {
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
-  font-size: 16px;
   font-weight: 500;
   display: block;
-  padding-top: 50px;
+  padding-top: 45px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: bottom;
   padding-right: 20px;
 }
 .flat-rates label {
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
   font-weight: 500;
   display: block;
@@ -354,15 +396,16 @@ select:focus {
   font-size: 40px;
 }
 .pricing-amount{
-  font-size: 80px !important;
+  font-size: 60px !important;
   color: #7e46ea;
 }
-.right{
+.link-to-prices{
   color: #7e46ea;
+  font-size: 14px;
+  line-height: 4rem;
 }
-.right:hover{
+.link-to-prices:hover{
   color: #7e46ea;
-  text-decoration: none;
 }
 
 
@@ -373,22 +416,26 @@ select:focus {
     padding-bottom: 5%;
     text-align: center;
   }
+  .insight-landing-rates {
+    margin-top: 0px;
+    width: 100%;
+    margin: 0px;
+  }
   .insight-landing-reviews, .insight-landing-services {
-    margin-top: 4.25%;
+    margin-top: 15px;
+    margin-bottom: 0px;
   }
-  .vl {
-    border-bottom: 1px solid lightgrey;
-    width: 350px;
-    border-left: none;
-    height: auto;
+  .rate-container{
+    width: 100%;
+    margin-top: 15px;
   }
-  .insight-landing-rates-hourly {
-    margin-bottom: 10%;
-    width: 90%;
-  }
+  .insight-landing-rates-body {
+    width: 100%;
+}
+
   .insight-landing-rates-flat {
-    margin-top: 10%;
-    width: 90%;
+    margin-top: 15px;
+    width: 100%;
   }
   .rate-body{
     font-size: 16px;
@@ -410,6 +457,7 @@ select:focus {
   }
   .hourly-rates label {
     font-size: 14px;
+    padding-top: 35px;
   }
 }
 /* ---------------------------------------------*/
@@ -500,9 +548,18 @@ select:focus {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
+/* .insight-landing-reviews{
+  padding: 8% 0px;
+} */
+.insight-landing-reviews-footer{
+  padding-bottom: 10%;
+}
 
 @media (max-width: 35.5em){
   .reviews-header-title-blue, .reviews-footer-title-blue{
     font-size: 14px;
+  }
+  .insight-landing-reviews, .insight-landing-services {
+    width: 100%;
   }
 }

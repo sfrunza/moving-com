@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../../../../../assets/images/logoo.png'
+import ReactWOW from 'react-wow'
 
 const ReviewsLanding = props => {
   return (

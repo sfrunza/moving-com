@@ -6,14 +6,6 @@
   object-fit: cover;
 }
 
-.service-image{
-  width: 100%;
-  min-height: 185px;
-  border-radius: 6px;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .service-image img:hover{
   -webkit-transform: translateY(-8px);
@@ -28,18 +20,43 @@
  }
 
 #app div div div #insight-landing-page div .four-services div.container{
-  position: relative;
-  width: 80%;
-  max-width: none;
-  margin-right: auto;
-  margin-left: auto;
- }
+  width: auto;
+  margin: auto;
+  padding: 0px;
+  max-width: 1100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .four-services-div {
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+  }
+  .four-services-div .service-wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 5% 0px;
+  }
+  #app div div div #insight-landing-page div .four-services div.container {
+    width: 60%;
+  }
+  .service-item .service-data {
+    padding: 13px 40px 15px;
+  }
+  .service-image img {
+    width: 80%;
+    object-fit: fill;
+  }
+}
+
+
 .four-services-div{
   display: flex;
   justify-content:space-between;
 }
 .service-wrapper {
-  width: 25% !important;
+  width: 25% ;
 }
 .service-item{
   margin-right: 15px;
@@ -74,7 +91,7 @@
   text-decoration: none;
 }
 .paragraph {
-  color: #a2a9b4;
+  color: #1d1d1f;
   font-weight: 400;
   font-family: 'Maison Neue',sans-serif;
 }
@@ -92,10 +109,9 @@
   background-color: #7e46ea;
   border-radius: 4px;
   font-size: 13px;
-  font-family: 'Maison Neue Bold';
+  font-family: 'Maison Neue',sans-serif;;
 }
 .button.black:hover {
-  background-color: #542e9c;
   text-decoration: none;
 }
 
@@ -110,6 +126,9 @@
   }
   #app div div div #insight-landing-page div .four-services div.container{
      width: 100%;
+  }
+  .insight-landing-services{
+    width: 100%;
   }
   .service-wrapper {
     width: 100% !important;

@@ -55,18 +55,25 @@
   padding: 8% 0;
   position: relative;
   text-align: center;
+  width: auto;
+  max-width: 1300px;
+  margin: auto;
 }
 @media (max-width: 35.5em){
   .insight-gallery-intro{
     min-height: 500px;
+    width: 100%;
   }
   .insight-gallery-cover{
     height: 600px;
   }
   .ReactGridGallery {
-    margin: 15% auto;
+    margin: 15px auto;
     display: flex;
     flex-wrap: wrap;
     width: 100%
+  }
+  .gallery-img{
+    margin-top: 80px;
   }
 }

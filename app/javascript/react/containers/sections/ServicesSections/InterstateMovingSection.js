@@ -10,7 +10,7 @@ const InterstateMovingSection = props => {
         <p className='service-header-subtitle'>Flat Rate Moving. Gas, mileage, tolls, insurance are included. No hidden fees. Same or Next Day moving services on distance up to 1,500 miles.</p>
       </div>
 
-      <ReactWOW animation='fadeInUp' duration="1.5s" delay="0.5s">
+      <ReactWOW animation='fadeInUp' duration="1.5s">
       <div className="long-distance-body" >
         <div className="cards">
           <div className="card-wrapper big-image">
@@ -27,7 +27,10 @@ const InterstateMovingSection = props => {
                 <img src="https://uploads-ssl.webflow.com/5d5a497d83100b4a7107c6a2/5d5c4ab8f8e0fceb33ca47bb_icon-greencheckmark.svg" alt="icon-greencheckmark" className="benefit-icon" />
                 <div className="benefit-interstate-text">Insured</div>
               </div>
-              <a className='flat-rate-link' href="/pricing#long-distance-rates">View Flat Rates »</a>
+              <div  className="flat-rate-link-to">
+                <a className='flat-rate-link' href="/pricing#long-distance-rates">View Flat Rates</a>
+                <span><i className="fas fa-chevron-right" style={{fontSize: "12px"}}></i></span>
+              </div>
               <div className="card-buttons">
                 <button>Book Us Now</button>
               </div>
